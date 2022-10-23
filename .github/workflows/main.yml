@@ -1,0 +1,26 @@
+name: "Deploy Graph Theory Visualizer"
+
+on:
+  workflow_dispatch:
+  push:
+    tags:
+      - "graph-theory-visualizer/v*"
+
+env:
+  PROJECT_PATH:  "./Graph Theory Visualizer/Graph Theory Visualizer.csproj"
+
+jobs:
+  deploy:
+    runs-on: windows-latest
+    steps:
+      - uses: actions/checkout@v2
+
+      - uses: actions/setup-dotnet@v1
+        with:
+          dotnet-version: 6.0
+
+      - run: dotnet restore ${{ env.PROJECT_PATH }}
+
+      - run: dotnet build ${{ env.PROJECT_PATH }} -c Release --no-restore
+
+      - run: dotnet publish ${{ env.PROJECT_PATH }} -c Release -r win-x64 /p:PublishSingleFile=true /p:IncludeNativeLibrariesForSelfExtract=true --self-contained true --no-build
