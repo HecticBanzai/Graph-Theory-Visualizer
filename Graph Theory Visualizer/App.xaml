@@ -5,8 +5,8 @@
              xmlns:directedundirected="clr-namespace:Graph_Theory_Visualizer.Dialogs.DirectedUndirected"
              StartupUri="MainWindow.xaml">
     <Application.Resources>
-        <!--<DataTemplate DataType="{x:Type directedundirected:DirectedUndirectedDialogViewModel}">
+        <DataTemplate DataType="{x:Type directedundirected:DirectedUndirectedDialogViewModel}">
             <directedundirected:DirectedUndirectedDialogView/>
-        </DataTemplate>-->
+        </DataTemplate>
     </Application.Resources>
 </Application>
