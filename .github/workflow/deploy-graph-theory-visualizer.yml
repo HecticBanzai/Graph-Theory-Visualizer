@@ -1,6 +1,7 @@
 name: "Deploy Graph Theory Visualizer"
 
 on:
+  workflow_dispatch:
   push:
     tags:
       - "graph-theory-visualizer/v*"
