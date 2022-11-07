@@ -82,10 +82,10 @@ namespace Graph_Theory_Visualizer
             ModeDisplay.Text = mode;
         }
 
-        private void RunAlgorithm_click(object sender, RoutedEventArgs e)
-        {
+        //private void RunAlgorithm_click(object sender, RoutedEventArgs e)
+        //{
 
-        }
+        //}
 
         private void Grid_MouseWheel(object sender, MouseWheelEventArgs e)
         {

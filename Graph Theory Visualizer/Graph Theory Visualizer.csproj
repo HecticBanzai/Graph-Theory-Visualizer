@@ -6,6 +6,21 @@
     <RootNamespace>Graph_Theory_Visualizer</RootNamespace>
     <Nullable>enable</Nullable>
     <UseWPF>true</UseWPF>
+    <PackageIcon>graph_theory_picture.png</PackageIcon>
+    <RepositoryUrl>https://github.com/HecticBanzai/Graph-Theory-Visualizer</RepositoryUrl>
+    <RepositoryType>git</RepositoryType>
+    <ApplicationIcon>graph_theory_picture.ico</ApplicationIcon>
   </PropertyGroup>
+
+  <ItemGroup>
+    <Content Include="graph_theory_picture.ico" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Update="graph_theory_picture.png">
+      <Pack>True</Pack>
+      <PackagePath>\</PackagePath>
+    </None>
+  </ItemGroup>
 
 </Project>
